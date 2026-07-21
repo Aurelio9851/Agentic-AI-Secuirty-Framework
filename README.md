@@ -6,7 +6,7 @@
 
 ## Overview
 
-This project implements a complete **multi-agent architecture** from scatch.
+This project implements a custom multi-agent AI system where specialized agents collaborate to analyze software repositories, understand codebases, perform security audits, retrieve relevant information through RAG, and generate structured reports using autonomous planning and tool execution.
 
 - Agent orchestration
 - Planning
@@ -243,55 +243,30 @@ Need More Work?
 
 ```text
 project/
-
 │
-
 ├── agents/
-
 │   ├── base_agent.py
-
 │   ├── planner_agent.py
-
 │   ├── supervisor_agent.py
-
 │   ├── search_agent.py
-
 │   ├── code_agent.py
-
 │   ├── security_agent.py
-
 │   └── reporter_agent.py
-
 │
-
 ├── tools/
-
 │   ├── file_tools.py
-
 │   ├── code_tools.py
-
 │   ├── security_tools.py
-
 │   └── rag_tools.py
-
 │
-
 ├── rag/
-
 │   ├── rag.py
-
 │   ├── gemini_embedding.py
-
 │   └── vector_store.py
-
 │
-
 ├── memory/
-
 │   └── shared_memory.py
-
 │
-
 └── main.py
 ```
 
