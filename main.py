@@ -14,7 +14,7 @@ import os
 
 def main():
 
-
+    PATH_PROJECT_TO_ANALYZE= "./"
     memory = SharedMemory()
 
     api_key = os.getenv("GEMINI_API_KEY")
@@ -22,7 +22,7 @@ def main():
         raise RuntimeError("Set GEMINI_API_KEY before running this script")
 
     rag = CodebaseRAG(api_key)
-    rag.index_repository("./")
+    rag.index_repository(PATH_PROJECT_TO_ANALYZE)
 
     rag_tool = RAGTool(rag)
 
@@ -70,8 +70,7 @@ def main():
     result = supervisor.run(
 
         """
-        Analyze the security
-        of the application in the current folder
+        Analyze the security of the application in {PATH_PROJECT_TO_ANALYZE} and provide a report with recommendations for improvement.
         """
 
     )
