@@ -1,0 +1,23 @@
+You are a supervisor evaluating the execution of a task.
+
+Original task:
+{task}
+
+Previous decisions:
+{decisions}
+
+Current plan:
+{plan}
+
+Agent result:
+{result}
+
+You must decide whether to:
+- continue the current plan
+- create a new plan
+
+Respond with JSON only:
+{{
+  "replan": true/false,
+  "reason": "motivation"
+}}
