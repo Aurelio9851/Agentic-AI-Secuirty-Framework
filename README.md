@@ -6,9 +6,7 @@
 
 ## Overview
 
-This project implements a complete **multi-agent architecture** without relying on frameworks such as LangGraph, CrewAI or AutoGen.
-
-The goal is to understand how modern AI agent systems work internally by implementing every component manually:
+This project implements a complete **multi-agent architecture** from scatch.
 
 - Agent orchestration
 - Planning
@@ -18,8 +16,6 @@ The goal is to understand how modern AI agent systems work internally by impleme
 - Retrieval-Augmented Generation (RAG)
 - Semantic code search
 - Multi-agent collaboration
-
-Instead of hiding the logic behind a framework, every decision is explicit and customizable.
 
 ---
 
